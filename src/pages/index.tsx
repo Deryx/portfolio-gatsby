@@ -1,14 +1,35 @@
-import * as React from "react"
+import * as React from "react";
+import LeftNavigation from "../components/leftNavigation/leftNavigation";
 
 // import Layout from "../components/layout"
 // import Seo from "../components/seo"
 import "./styles.scss";
 
 const IndexPage = () => (
-  <div className="main">
-    <aside className="left-column"></aside>
-    <section className="right-column">
-      <h1>Deryx Scott</h1>
+  <div className="container">
+    <LeftNavigation />
+    <section id="intro">
+      <h1></h1>
+    </section>
+
+    <section id="about">
+      <h1>about</h1>
+    </section>
+
+    <section id="skills">
+      <h1>skills</h1>
+    </section>
+
+    <section id="experience">
+      <h1>experience</h1>
+    </section>
+
+    <section id="projects">
+      <h1>projects</h1>
+    </section>
+
+    <section id="contact">
+      <h1>contact</h1>
     </section>
   </div>
 )
