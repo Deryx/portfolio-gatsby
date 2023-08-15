@@ -1,7 +1,7 @@
 export const siteLinks = [
-    { 'siteLink': 'about', 'href': '' },
-    { 'siteLink': 'skills', 'href': '' },
-    { 'siteLink': 'experience', 'href': '' },
-    { 'siteLink': 'projects', 'href': '' },
-    { 'siteLink': 'contact', 'href': '' }
+    { 'siteLink': 'about', 'href': '#about' },
+    { 'siteLink': 'skills', 'href': '#skills' },
+    { 'siteLink': 'experience', 'href': '#experience' },
+    { 'siteLink': 'projects', 'href': '#projects' },
+    { 'siteLink': 'contact', 'href': '#contact' }
 ]

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { siteLinks } from '../../siteLinks';
 import './styles.scss';
 
@@ -10,9 +11,9 @@ const LeftNavigation = () => {
                 <ul>
                     { siteLinks.map( (siteLink) => 
                         <li>
-                            <Link to={ siteLink.href }>
+                            <AnchorLink to={ siteLink.href }>
                                 { siteLink.siteLink }
-                            </Link>
+                            </AnchorLink>
                         </li>
                     )}
                 </ul>
