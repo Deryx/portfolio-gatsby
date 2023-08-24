@@ -15,7 +15,7 @@ nav {
         list-style: none;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid black;
+        border-right: 1px dotted black;
 
         li {
             display: flex;
@@ -28,7 +28,17 @@ nav {
                 text-decoration: none;
                 display: flex;
                 justify-content: flex-end;
+                font-family: 'Inter', sans-serif;
+                text-transform: lowercase;
+                font-size: 90%;
+                color: rgb(0 0 0);
+                
+                &:hover {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
             }
+
         }
     }
 }
