@@ -1,4 +1,5 @@
 export const siteLinks = [
+    { 'siteLink': 'home', 'href': '#intro'},
     { 'siteLink': 'about', 'href': '#about' },
     { 'siteLink': 'skills', 'href': '#skills' },
     { 'siteLink': 'experience', 'href': '#experience' },

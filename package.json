@@ -1,14 +1,15 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio-gatsby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Software Engineering portfolio for Deryx E. Scott",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Deryx E. Scott <deryxescott@gmail.com>",
   "dependencies": {
     "gatsby": "^5.10.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^5.10.0",
