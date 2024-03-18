@@ -16,33 +16,25 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
 
-  .pill {
-    padding: 0.3rem 0.5rem;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 90%;
-    margin-bottom: 0.1875rem;
-    margin-right: 0.5rem;
-    background: rgb(153, 204, 255);
-    color: rgb(0, 0, 102);
-    font-weight: bold;
-  }
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
 
   section {
-    padding: 1.5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     text-align: justify;
     font-family: 'Inter', sans-serif;
     font-size: 90%;
 
+    @media screen and (min-width: 600px) {
+      min-height: auto;
+    }
+
     h1 {
-      padding-top: 1.75rem;
+      padding-top: 2.25rem;
       font-family: 'Urbanist', sans-serif;
       text-transform: uppercase;
       font-size: 150%;
@@ -53,6 +45,8 @@ html, body {
   }
 
   #intro {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +63,9 @@ html, body {
     font-weight: 900;
     letter-spacing: 2px;
 
-    .first-letter {
-      font-size: 125%;
+    @media screen and (min-width: 600px) {
+      margin: 0;
+      margin-top: -200px;
     }
    }
 
@@ -78,6 +73,10 @@ html, body {
     margin-top: 0;
     font-family: "Inter", sans-serif;
     font-weight: normal;
+
+    @media screen and (min-width: 600px) {
+      margin: 0
+    }
    }
   }
 
@@ -143,15 +142,12 @@ html, body {
         margin-bottom: 1.5rem;
         padding: 0;
         font-family: 'Inter', sans-serif;
-
+            
         .tech-container {
           justify-content: flex-start;
           margin-bottom: 1.5rem;
         }
 
-        p {
-          font-size: 90%;
-        }
 
         p.left {
           text-align: left;

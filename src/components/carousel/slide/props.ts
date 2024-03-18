@@ -1,21 +1,14 @@
-type technologyList = string[];
-
-export interface imageSlide {
-    company?: never;
-    technology?: never;
-    webAddress?: never;
-    projectName?: never;
-    projectDescription?: never;
-    image: string;
-}
+export type slideMap = {
+    company: '',
+    technology: [],
+    webAddress: '',
+    projectName: '',
+    projectDescription: '',
+    image: ''
+};
 
 export interface projectSlide {
-    company?: string;
-    technology?: technologyList;
-    webAddress?: string;
-    projectName?: string;
-    projectDescription?: string;
-    image?: never;
+    slideInfo: slideMap;
 }
 
-export type SlideProps = projectSlide | imageSlide;
+export type SlideProps = projectSlide;

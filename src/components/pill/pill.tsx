@@ -1,10 +1,11 @@
 import React from "react";
 import { PillProps } from "./props";
+import "./styles.scss";
 
-const Pill = ( { backgroundColor, value }: PillProps ) => {
+const Pill = ( { value }: PillProps ) => {
     return (
         <>
-            <div style={{backgroundColor: `#${backgroundColor}`}}>
+            <div className="pill">
                 { value }
             </div>
         </>
