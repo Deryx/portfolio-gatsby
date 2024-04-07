@@ -1,16 +1,16 @@
 import React from "react";
 import { SlideProps } from "./props";
-import { Link } from 'gatsby-link';
 import Pill from "../../pill/pill";
 import "./styles.scss";
 
 const Slide = ({ slideInfo }: SlideProps
 ) => {
+
     return (
         <div className="slide">
             <section>
                 <h2>{ slideInfo.projectName }</h2>
-                <img src={ slideInfo.image } alt="" />
+                <img src={ `../../static/images/${ slideInfo.image }` } height={ 250 } alt="" />
                 <p>{ slideInfo.projectDescription }</p>
                 <h4>
                     { slideInfo.company }
