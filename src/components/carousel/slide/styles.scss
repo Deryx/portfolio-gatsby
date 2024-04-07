@@ -1,0 +1,32 @@
+.slide {
+    height: 50vh;
+
+    p {
+        font-size: 115%;
+        height: 20vh;
+        
+        @media screen and (min-width: 600px) {
+            padding-right: 20px;
+            height: 160px;
+        }
+    }
+
+    .web-address {
+        margin-bottom: 1.5rem;
+        display: flex;
+
+        span {
+            font-weight: bold;
+            margin-right: 0.125rem;
+        }
+
+        a {
+            color: rgb(153, 204, 255);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
