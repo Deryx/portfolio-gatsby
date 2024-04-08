@@ -234,7 +234,7 @@ const IndexPage = () => {
                   <div className="pill">CSS</div>
                   <div className="pill">JavaScript</div>
                 </div>
-            </section>
+              </section>
               <section>
                 <p>2005 &mdash; 2016</p>
                 <h3>Raiser's Edge Database Administrator &bull; The College of New Rochelle</h3>
@@ -269,6 +269,7 @@ const IndexPage = () => {
                   <div className="pill">Internet Information Services (IIS)</div>
                 </div>
               </section>
+              <p><a href="../../static/resume.pdf">View Full Resume</a></p>
             </div>
           </section>
 
