@@ -87,6 +87,7 @@ html, body {
       margin-top: 2.5rem;
       justify-content: flex-start;
       position: fixed;
+      width: 40%;
     }
 
    h1 {
@@ -184,10 +185,26 @@ html, body {
         }
       }
 
-      a {
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-decoration: none;
+      .resume {
+        display: block;
+        width: fit-content;
+        background-color: rgb(153, 204, 255);
+        padding: 5px;
+
+        a {
+          display: block;
+          color: rgb(0, 0, 102);
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+
+          a:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

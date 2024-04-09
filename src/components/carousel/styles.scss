@@ -35,33 +35,20 @@
         button {
             border: none;
             background-color: transparent;
-            color: rgb(153, 204, 255);
-            font-size: 150%;
+            color: rgb(0, 0, 0);
+            font-size: 300%;
             font-family: 'Lato', sans-serif;
+            cursor: pointer;
         }
 
         .decrement {
             justify-self: flex-start;
             margin-left: 1rem;
-
-            button {
-                border-radius: 100px;
-                background-color: transparent;
-                color: rgb(0, 0, 0);
-                font-size: 300%;
-            }
         }
 
         .increment {
             justify-self: flex-end;
             margin-right: 1rem;
-
-            button {
-                border-radius: 100px;
-                background-color: transparent;
-                color: rgb(0, 0, 0);
-                font-size: 300%;
-            }
         }
     }
 }

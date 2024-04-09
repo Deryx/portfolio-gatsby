@@ -269,7 +269,9 @@ const IndexPage = () => {
                   <div className="pill">Internet Information Services (IIS)</div>
                 </div>
               </section>
-              <p><a href="../../static/resume.pdf">View Full Resume</a></p>
+              <p className="resume">
+                <a href="../../static/resume.pdf" target="_blank">View Full Resume</a>
+              </p>            
             </div>
           </section>
 
