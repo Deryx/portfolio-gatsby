@@ -31,6 +31,25 @@ html, body {
       width: 50%;
       flex-direction: column;
       align-items: center;
+      
+      .contact {
+        display: flex;
+        justify-content: space-evenly;
+        
+        a {
+          fill: rgb(153, 204, 255);
+        }
+
+        a:hover {
+          fill: rgb(255, 255, 255);
+        }
+
+        @media screen and (min-width: 600px) {
+          position: fixed;
+          margin-top: 600px;
+          width: 20%;
+        }
+      }
     }
   
     .right {
@@ -63,7 +82,7 @@ html, body {
 
     h1 {
       padding-top: 2.25rem;
-      font-family: 'Urbanist', sans-serif;
+      font-family: 'Inter', sans-serif;
       text-transform: uppercase;
       font-size: 150%;
       letter-spacing: 1px;
@@ -91,14 +110,14 @@ html, body {
 
    h1 {
     font-size: 300%;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-transform: capitalize;
     margin-top: -5rem;
     margin-bottom: 0;
     padding-top: 0;
     color: rgb(153, 204, 255);
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
 
     @media screen and (min-width: 600px) {
       margin: 0;
@@ -109,6 +128,7 @@ html, body {
     margin-top: 0;
     font-family: "Inter", sans-serif;
     font-weight: normal;
+    font-style: italic;
    }
   }
 

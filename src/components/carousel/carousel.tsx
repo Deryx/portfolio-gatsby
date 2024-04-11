@@ -8,11 +8,11 @@ const Carousel = ({ slides }: carouselProps ) => {
     const [slideNumber, setSlideNumber] = useState( 0 );
 
     const handleDecrement = () => {
-        setSlideNumber(prevSlideNumber => prevSlideNumber - 1);
+        slideNumber > 0 && setSlideNumber(prevSlideNumber => prevSlideNumber - 1);
     }
 
     const handleIncrement = () => {
-        setSlideNumber(prevSlideNumber => prevSlideNumber + 1);
+        slideNumber < slides.length - 1 && setSlideNumber(prevSlideNumber => prevSlideNumber + 1);
     }
 
     const resetSlideNumber = () => {
@@ -22,7 +22,7 @@ const Carousel = ({ slides }: carouselProps ) => {
     return (
         <div className='carousel-container'>
             <div className='slide-container'>
-                { slides[slideNumber] && <Slide slideInfo={ slides[slideNumber] } /> || resetSlideNumber() }
+                { slides[slideNumber] && <Slide slideInfo={ slides[slideNumber] } /> }
                 <div className='navigation-container'>
                     <div className='decrement'>
                         <SlideButton 

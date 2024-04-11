@@ -23,6 +23,10 @@
         a {
             color: rgb(153, 204, 255);
             text-decoration: none;
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
 
         a:visited {
