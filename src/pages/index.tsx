@@ -295,12 +295,6 @@ const IndexPage = () => {
               <Carousel slides={ projectSlides } />
             </div>
           </section>
-
-          <section id="contact">
-            <h1>contact</h1>
-            <div className="content">
-            </div>
-          </section>
         </div>
       </div>
     </>

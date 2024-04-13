@@ -5,9 +5,10 @@
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
-    background: rgb(0, 0, 102);
-    border-top: 0.3125rem solid rgb(153, 204, 255);
-    border-bottom: 0.0625rem solid rgb(153, 204, 255);
+    background: rgb(20, 15, 61);
+    border-top: 0.3125rem solid rgb(196, 196, 197);
+    border-bottom: 0.0625rem solid rgb(196, 196, 197);
+    ;
     position: fixed;
     top: 0;
 
@@ -31,7 +32,7 @@
             width: 100%;
             margin-top: 0.3125rem;
             height: 0.3125rem;
-            background: rgb(153, 204, 255);
+            background: rgb(196, 196, 197);
         }
     
         .hamburger-bar:first-child {

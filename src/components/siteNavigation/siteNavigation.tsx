@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { siteLinks } from '../../siteLinks';
 import './styles.scss';
 
 const SiteNavigation = () => {
-
     return (
         <>
             <nav className='siteNavigation'>

@@ -6,8 +6,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 102);
-  color: rgb(226, 223, 210);
+  background: rgb(20, 15, 61);
+  color: rgb(198, 196, 197);
 }
 
 .tech-container {
@@ -20,6 +20,22 @@ html, body {
 
 .container {
   width: 100vw;
+      
+  .contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 65vh;
+
+    a {
+      fill: rgb(198, 196, 197);
+    }
+
+    a:hover {
+      fill: rgb(255, 255, 255);
+    }
+  }
 
   @media screen and (min-width: 600px) {
     display: flex;
@@ -35,19 +51,16 @@ html, body {
       .contact {
         display: flex;
         justify-content: space-evenly;
-        
+        width: 20%;
+        position: fixed;
+        top: 75vh;
+
         a {
-          fill: rgb(153, 204, 255);
+          fill: rgb(196, 196, 197);
         }
 
         a:hover {
           fill: rgb(255, 255, 255);
-        }
-
-        @media screen and (min-width: 600px) {
-          position: fixed;
-          margin-top: 600px;
-          width: 20%;
         }
       }
     }
@@ -63,7 +76,6 @@ html, body {
       }
     }
   }
-
 
   section {
     margin-top: 2.5rem;
@@ -87,7 +99,7 @@ html, body {
       font-size: 150%;
       letter-spacing: 1px;
       font-weight: 900;
-      color: rgb(153, 204, 255);
+      color: rgb(198, 196, 197);
     }
 
     @media screen and (min-width: 600px) {
@@ -112,10 +124,10 @@ html, body {
     font-size: 300%;
     font-family: 'Inter', sans-serif;
     text-transform: capitalize;
-    margin-top: -5rem;
+    margin-top: -15rem;
     margin-bottom: 0;
     padding-top: 0;
-    color: rgb(153, 204, 255);
+    color: rgb(198, 196, 197);
     font-weight: 900;
     letter-spacing: -1px;
 
@@ -157,7 +169,6 @@ html, body {
         flex-direction: column;
         text-align: justify;
         font-family: 'Inter', sans-serif;
-        font-size: 90%;
         margin: 0;
         padding: 0;
     
@@ -207,8 +218,7 @@ html, body {
       .resume {
         display: block;
         width: fit-content;
-        background-color: rgb(153, 204, 255);
-        padding: 5px;
+        background-color: rgb(198, 196, 197);
 
         a {
           display: block;
@@ -216,12 +226,13 @@ html, body {
           font-weight: bold;
           text-decoration: none;
           display: block;
-          width: 100%;
+          width: fit-content;
+          height: 100%;
           margin: 0;
-          padding: 0;
+          padding: 5px;
 
-          a:hover {
-            text-decoration: underline;
+          &:hover {
+            background-color: rgb(255, 255, 255);
           }
         }
       }

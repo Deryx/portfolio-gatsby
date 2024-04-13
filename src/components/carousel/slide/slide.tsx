@@ -16,7 +16,6 @@ const Slide = ({ slideInfo }: SlideProps
                     { slideInfo.company }
                 </h4>
                     <div className='web-address'>
-                        <span>address: </span> 
                         { slideInfo.webAddress ?
                             <a href={ slideInfo.webAddress } target='_blank'>
                                 { slideInfo.webAddress }
