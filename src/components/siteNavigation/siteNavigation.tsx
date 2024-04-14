@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { siteLinks } from '../../siteLinks';
 import './styles.scss';
