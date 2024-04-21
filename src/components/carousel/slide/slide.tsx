@@ -23,7 +23,6 @@ const Slide = ({ slideInfo }: SlideProps
 ) => {
     const { images } = useStaticQuery(query);
     const image = images.edges.filter((edge) => edge.node.fluid.src.includes( slideInfo.image ));
-    console.log(image[0].node.fluid);
 
     return (
         <div className="slide">
