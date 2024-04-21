@@ -1,16 +1,37 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from 'gatsby-image';
 import { SlideProps } from "./props";
 import Pill from "../../pill/pill";
 import "./styles.scss";
 
+const query = graphql`
+    query {
+        images: allImageSharp {
+            edges {
+                node {
+                    fluid(maxHeight: 250) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    }
+`
+
 const Slide = ({ slideInfo }: SlideProps
 ) => {
+    const { images } = useStaticQuery(query);
+    const image = images.edges.filter((edge) => edge.node.fluid.src.includes( slideInfo.image ));
+    console.log(image[0].node.fluid);
 
     return (
         <div className="slide">
             <section>
                 <h2>{ slideInfo.projectName }</h2>
-                <img src={ `../../static/images/${ slideInfo.image }` } height={ 250 } alt="" />
+                <div className="images">
+                    <Img fluid={ image[0].node.fluid } imgStyle={ {objectFit: 'contain'}}  alt="" />
+                </div>
                 <p>{ slideInfo.projectDescription }</p>
                 <h4>
                     { slideInfo.company }

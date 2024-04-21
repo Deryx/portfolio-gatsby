@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width: 600px) {
+        width: 70%;
+    }
+
     .slide-container {
         width: 100%;
         height: 675px;
@@ -20,14 +24,15 @@
     }
 
     .navigation-container {
-        margin-top: -18rem;
-        width: 100%;
+        margin-top: -19rem;
+        width: 90%;
         display: flex;
         justify-content: space-between;
+        position: absolute;
 
         @media screen and (min-width: 600px) {
-            margin-top: -21rem;
-            width: 100%;
+            width: 24%;
+            margin-top: -21.5rem;
             display: flex;
             justify-content: space-between;
         }
