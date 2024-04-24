@@ -20,25 +20,27 @@ const Carousel = ({ slides }: carouselProps ) => {
     }
 
     return (
-        <div className='carousel-container'>
-            <div className='slide-container'>
-                { slides[slideNumber] && <Slide slideInfo={ slides[slideNumber] } /> }
-                <div className='navigation-container'>
-                    <div className='decrement'>
-                        <SlideButton 
-                            value='&lt;'
-                            buttonFunction={ handleDecrement }
-                        />
-                    </div>
-                    <div className='increment'>
-                        <SlideButton 
-                            value='&gt;'
-                            buttonFunction={ handleIncrement }
-                        />
-                    </div>
+        <>
+            <div className='navigation-container'>
+                <div className='decrement'>
+                    <SlideButton 
+                        value='&lt;'
+                        buttonFunction={ handleDecrement }
+                    />
+                </div>
+                <div className='increment'>
+                    <SlideButton 
+                        value='&gt;'
+                        buttonFunction={ handleIncrement }
+                    />
                 </div>
             </div>
-        </div>
+            <div className='carousel-container'>
+                <div className='slide-container'>
+                    { slides[slideNumber] && <Slide slideInfo={ slides[slideNumber] } /> }
+                </div>
+            </div>
+    </>
     )
 }
 

@@ -19,41 +19,43 @@
         height: 675px;
 
         @media screen and (min-width: 600px) {
-            height: 650px;
+            height: 700px;
         }
     }
+}
 
-    .navigation-container {
-        margin-top: -19rem;
-        width: 90%;
+.navigation-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 99;
+    margin-top: 9.5rem; 
+
+    @media screen and (min-width: 600px) {
+        margin-top: 11rem;
+        width: 24%;
         display: flex;
         justify-content: space-between;
-        position: absolute;
+        z-index: 99;
+    }
 
-        @media screen and (min-width: 600px) {
-            width: 24%;
-            margin-top: -21.5rem;
-            display: flex;
-            justify-content: space-between;
-        }
+    button {
+        border: none;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        font-size: 300%;
+        font-family: 'Lato', sans-serif;
+        cursor: pointer;
+    }
 
-        button {
-            border: none;
-            background-color: transparent;
-            color: rgb(0, 0, 0);
-            font-size: 300%;
-            font-family: 'Lato', sans-serif;
-            cursor: pointer;
-        }
+    .decrement {
+        justify-self: flex-start;
+        margin-left: 1rem;
+    }
 
-        .decrement {
-            justify-self: flex-start;
-            margin-left: 1rem;
-        }
-
-        .increment {
-            justify-self: flex-end;
-            margin-right: 1rem;
-        }
+    .increment {
+        justify-self: flex-end;
+        margin-right: 1rem;
     }
 }
