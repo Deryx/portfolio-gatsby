@@ -1,16 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { siteLinks } from '../../siteLinks';
 import './styles.scss';
 
-const SiteNavigation = () => {
+const SiteNavigation = ({ ref }: { ref?: React.Ref<HTMLLIElement>}) => {
+    const linksRef = useRef<HTMLLIElement | null>([]);
     return (
         <>
             <nav className='siteNavigation'>
                 <div id='menu'>
                     <ul>
-                        { siteLinks.map( (siteLink) => 
-                            <li key={ siteLink.siteLink }>
+                        { siteLinks.map( (siteLink, index) => 
+                            <li 
+                                ref={(node) => {
+                                    linksRef.current = node;
+                                    if (typeof ref === 'function') {
+                                        ref(node);
+                                    } else if (ref) {
+                                        ref.current = node;
+                                    }
+                                }} 
+                                key={ siteLink.siteLink }>
                                 <AnchorLink to={ siteLink.href }>
                                     { siteLink.siteLink }
                                 </AnchorLink>

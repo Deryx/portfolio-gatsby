@@ -120,14 +120,24 @@ const IndexPage = () => {
             <h1>about</h1>
             <div className="content">
               <p className="about">
-                My name is pronounced like "Derricks", not "Dexter", as pronounced by a 3rd grade substitute teacher who came across my name while calling attendance (still shaking my head about that one!). Anyway, I am a Software Engineer III for JP Morgan Chase, working on a team that serves as the bank's Material UI for web teams.
+                My love affair with web development began the moment I discovered that websites were built with HTML. Armed with HTML For Dummies, I built my first interactive site (a personal training portal powered by Perl) in just two weeks—and I was hooked. "How could I turn this into a career?" I wondered.
               </p>
               <p className="about">
-                While attending high school, I became enamored with computers when I came across the Commodore 64 my senior year (I know! I'm dating myself!). I immediately joined the school's computer club to find that I had no idea about computers or programming! During my sophomore year at Stanford University, I again tried my hand at computer programming during the fall semester while also walking on the baseball team. Bad idea! While I didn't fail, I barely passed! Undaunted, I took the course again the following falls. I passed this time, instituting solutions others in the class did not implement, garnering a modicum of praise from class teaching assistants. I went on to take, and pass, other computer courses but did not major in computer science because it would have added time to get my degree.
+                The answer came when I created a financial aid estimation tool using classic ASP while working in higher education. Its success led my college—which had no web presence at the time—to offer me their first-ever Web Developer role. That leap of faith launched my 20+ year journey, evolving from HTML and Perl to mastering modern stacks like React, TypeScript, C#, and cloud-native architectures.
                 </p>
               <p className="about">
-                For quite a few years after college, while I didn't do any programming, I did learn a lot about computers - learning about relational databases; doing some batch programming in MS_DOS; building PCs; and becoming a MS Word and Excel expert. It wasn't until the late nineties with the explosion in popularity of the Internet did I return to programming. In 1999, a group of friends and I decided we wanted to create an online culture-based magazine. While the project never got off the ground, I did teach myself how web pages were created using HTML and pushed to a server using the File Transfer Protocol (FTP). I used my new skills to create an interactive personal training site using HTML and Perl in less than a month. You can still see vestiges of it on the <a href="https://web.archive.org/web/20010401185236/http://des-healthsmith.com/" target='_blank'>Wayback Machine</a>. From there, I created a financial aid estimator program in HTML and classic ASP just to see if I could do it (I was an Associate Financial Aid Director at the time). This led me to become The College of New Rochelle's sole Web Developer, creating their first web presence in 2000.
+                Today, I’m a Senior Full-Stack Engineer specializing in frontend modernization and legacy system migrations, with a proven track record at companies like JPMorgan Chase, where I worked on large-scale projects like migrating Web Components to React. I thrive on untangling complex JavaScript, mentoring developers (as I did at Springboard and Thinkful), and building tools that solve real-world problems—whether it’s a financial aid calculator or a bilingual learning app like MySpanishTutor.
               </p>
+              <p className="about">
+                When I’m not coding, you’ll find me:
+                <ul>
+                  <li>Traveling around the world (I've been to Mexico, Colombia, Panama, Costa Rica, Paris, Spain, Italy, Amsterdam, Berlin, Athens, Morocco, Thailand, Bali, and various Caribbean islands,</li>
+                  <li>Watching movies (my favorite genre is action),</li>
+                  <li>Curled up at Barnes & Noble (I really miss Borders though!) with a stack of tech or miscellaneously interesting books,`</li>
+                  <li>Practicing boxing on the VR or heavy bag (or lifting weights to balance out the bookstore trips).</li> 
+                </ul>
+              </p>
+              <p className="about">I’m always exploring new technologies and opportunities to create clean, dynamic, and user-centric applications.</p>
             </div>
           </section>
 
@@ -149,6 +159,7 @@ const IndexPage = () => {
                   <Pill value="Sass" />
                   <Pill value="Less" />
                   <Pill value="Bootstrap" />
+                  <Pill value="Vanilla Extract" />
                 </div>
               </section>
               <section>
@@ -161,9 +172,6 @@ const IndexPage = () => {
                   <Pill value="Python" />
                   <Pill value="GraphQL" />
                   <Pill value="Prisma" />
-                  <Pill value="Vanilla Extract" />
-                  <Pill value="Framer's Motion" />
-                  <Pill value="React Beautiful DND" />
                 </div>
               </section>
               <section>
@@ -181,6 +189,7 @@ const IndexPage = () => {
               <section>
                 <h3>other tech</h3>
                 <div className="tech-container">
+                  <Pill value="D3.js" />
                   <Pill value="Git" />
                   <Pill value="Github" />
                   <Pill value="BitBucket" />
@@ -196,6 +205,8 @@ const IndexPage = () => {
                   <Pill value="Mocha" />
                   <Pill value="Jest" />
                   <Pill value="Cypress" />
+                  <Pill value="Framer's Motion" />
+                  <Pill value="React Beautiful DND" />
                 </div>
               </section>
             </div>
@@ -205,7 +216,7 @@ const IndexPage = () => {
             <h1>experience</h1>
             <div className="content">
               <section>
-                <p>2017 &mdash; PRESENT</p>
+                <p>December 2017 &mdash; May 2025</p>
                 <h3>Software Engineer III &bull; JP Morgan Chase & Co.</h3>
                 <p>Create, enhance, and debug reusable web components used by over 100 web teams responsible for building user interfaces (UI). Transition JavaScript Web Components to pure React components, improving maintainablity, efficiency, and composability of existing components. Originally worked on CXO teams responsible for creating full-stack UIs for payments and collections.</p>
                 <div className="tech-container">
@@ -252,6 +263,12 @@ const IndexPage = () => {
               <section>
                 <p>2005 &mdash; 2016</p>
                 <h3>Raiser's Edge Database Administrator &bull; The College of New Rochelle</h3>
+                <ul>
+                  <li>Managed Raiser's Edge database operations ensuring data integrity and security for institutional advancement system</li>
+                  <li>Developed WebFOCUS BI reporting solutions extracting AS/400 data for real-time donor analytics and strategic decision-making</li>
+                  <li>Automated data import processes and generated annual reports using advanced SQL queries and stored procedures</li>
+                  <li>Standardized data governance protocols improving data quality and reporting accuracy</li>
+                </ul>
                 <div className="tech-container">
                   <div className="pill">Raiser's Edge</div>
                   <div className="pill">MS Excel</div>
