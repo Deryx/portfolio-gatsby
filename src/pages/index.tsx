@@ -133,7 +133,7 @@ const IndexPage = () => {
                 <ul>
                   <li>Traveling around the world (I've been to Mexico, Colombia, Panama, Costa Rica, Paris, Spain, Italy, Amsterdam, Berlin, Athens, Morocco, Thailand, Bali, and various Caribbean islands,</li>
                   <li>Watching movies (my favorite genre is action),</li>
-                  <li>Curled up at Barnes & Noble (I really miss Borders though!) with a stack of tech or miscellaneously interesting books,`</li>
+                  <li>Curled up at Barnes & Noble (I really miss Borders though!) with a stack of tech or miscellaneously interesting books,</li>
                   <li>Practicing boxing on the VR or heavy bag (or lifting weights to balance out the bookstore trips).</li> 
                 </ul>
               </p>
