@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useCallback } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { siteLinks } from '../../siteLinks';
 import './styles.scss';
 
 const SiteNavigation = ({ ref }: { ref?: React.Ref<HTMLLIElement>}) => {
-    const linksRef = useRef<HTMLLIElement | null>([]);
+    const linksRef = useRef<HTMLLIElement | null>(null);
+    const setLinksRef = useCallback((node: HTMLLIElement) => {
+        linksRef.current = node;
+    }, [])
     return (
         <>
             <nav className='siteNavigation'>
@@ -13,11 +16,11 @@ const SiteNavigation = ({ ref }: { ref?: React.Ref<HTMLLIElement>}) => {
                         { siteLinks.map( (siteLink, index) => 
                             <li 
                                 ref={(node) => {
-                                    linksRef.current = node;
-                                    if (typeof ref === 'function') {
-                                        ref(node);
-                                    } else if (ref) {
-                                        ref.current = node;
+                                    if (node) {
+                                        setLinksRef(node);
+                                        if (typeof ref === 'function') {
+                                            ref(node);
+                                        } 
                                     }
                                 }} 
                                 key={ siteLink.siteLink }>
